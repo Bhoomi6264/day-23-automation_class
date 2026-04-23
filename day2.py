@@ -5,7 +5,7 @@ conn=pymysql.connect(host='localhost',
 print('connected')
 cur=conn.cursor()
 cur.execute('use day1')
-cur.execute('show tables')
+cur.execute('select * from schooling')
 tables=cur.fetchall()
 for x in tables:
     print(x)
